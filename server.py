@@ -6,7 +6,7 @@ DIRECTORY = '/path/to/your/directory'
 
 handler = SimpleHTTPRequestHandler
 httpd = TCPServer(("", PORT), handler)
-httpd.allow_reuse_address = True  # 允许端口重用
+httpd.allow_reuse_address = True  # 
 
 print(f"Serving directory '{DIRECTORY}' at port {PORT}")
 httpd.serve_forever()
